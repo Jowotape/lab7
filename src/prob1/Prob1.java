@@ -1,9 +1,12 @@
 package prob1;
 
+import java.io.IOException;
+import java.io.BufferedReader;
+
 public class Prob1 {
     private int filas;
     private int columnas;
-    pritvate int[][] matriz;
+    private int[][] matriz;
 
     public Prob1() {
         this.filas = 0;
@@ -30,8 +33,12 @@ public class Prob1 {
         this.matriz = new int[filas][columnas];
     }
 
-    public void problemarse2(BufferedReader br) throws IOException {
-        setColumnas(br.readLine);
+    public void problemarse1(BufferedReader br) throws IOException {
+        validarInput(br);
+    }
+
+    public void validarInput(BufferedReader br) throws IOException {
+
     }
 }
 

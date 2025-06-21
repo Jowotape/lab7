@@ -14,7 +14,9 @@ public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         Prob1 prob1 = new Prob1();
+        Prob2 prob2 = new Prob2();
 
         prob1.problemarse1(br);
+        prob2.problemarse2(br);
     }
 }

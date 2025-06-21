@@ -1,3 +1,6 @@
 package prob2;
 
-public class Prob2 {
+public class Prob2
+{
+
+}

@@ -12,10 +12,6 @@ import prob4.*;
 public class Main {
     public static void main(String[] args) throws IOException {
 
-        Prob1 prob1 = new Prob1();
-        Prob2 prob2 = new Prob2();
-        Prob3 prob3 = new Prob3();
-
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         Prob1 problema1 = new Prob1();
         Prob2 problema2 = new Prob2();
@@ -29,7 +25,7 @@ public class Main {
             System.out.println("1. Trasponer una matriz");
             System.out.println("2. Mostrar elemento más grande de una fila en una matriz mxn");
             System.out.println("3. Mostrar diagonal secundaria de una matriz de mayor a menor");
-            System.out.println("4. Mostrar nombre de estudiantes y notas");
+            System.out.println("4. Mostrar nombre de estudiantes y notas en diferentes ordenaciones");
             System.out.println("5. Salir");
             System.out.print("Seleccione una opción: ");
 
@@ -54,7 +50,9 @@ public class Main {
                     problema3.problemarse3(reader);
                     break;
                 case 4:
-
+                    problema4.registrarDatos();
+                    problema4.seleccionarOrdenacion();
+                    problema4.imprimirDatos();
                     break;
                 case 5:
                     salir = true;
